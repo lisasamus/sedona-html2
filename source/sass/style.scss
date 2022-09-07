@@ -3,7 +3,7 @@
 @import "global/global.scss";
 @import "global/variables.scss";
 
-// Blocks
+// Blocks index
 @import "blocks/header.scss";
 @import "blocks/page.scss";
 @import "blocks/main-nav.scss";
@@ -11,4 +11,17 @@
 @import "blocks/features.scss";
 @import "blocks/booking.scss";
 @import "blocks/button.scss";
+@import "blocks/map.scss";
 @import "blocks/footer.scss";
+
+// Blocks catalog
+@import "blocks/intro.scss";
+@import "blocks/gallery.scss";
+@import "blocks/video.scss";
+
+// Blocks form
+@import "blocks/review.scss";
+@import "blocks/userdata.scss";
+@import "blocks/radio.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/feedback.scss";

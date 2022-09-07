@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Сайт города Седона</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/32.ico">
   <link rel="icon" href="img/favicon/152.svg">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page">
@@ -22,16 +24,16 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">главная</a>
+            <a class="main-nav__link" href="index.html">главная</a>
           </li>
           <li class="main-nav__item main-nav__item--current">
-            <a>фото и видео</a>
+            <a class="main-nav__link">фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href='#'>форма отзыва</a>
+            <a class="main-nav__link" href='form.html'>форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href='#'>html academy</a>
+            <a class="main-nav__link" href='#'>html academy</a>
           </li>
         </ul>
       </nav>
@@ -40,19 +42,20 @@
     <main>
       <section class="hero">
         <div class="hero__wrapper">
-          <img class="hero__background-img" src="#" width="320" height="389" alt="горы в Седоне">
-          <img class="hero__triangle-img" src="#" width="320" height="57" alt="">
+          <img class="hero__background-img hero__background-img--short" src="img/mobile-img/hero.jpg" width="320"
+            height="157" alt="горы в Седоне">
+          <img class="hero__triangle-img" src="img/icons/hero-decor.svg" width="320" height="57" alt="">
         </div>
         <section class="intro">
           <h1 class="intro__heading">фото и видео</h1>
-          <p class="intro__description">не можете решитьсф на путешествие из-за курса?
+          <p class="intro__description">не можете решиться на путешествие из-за курса?
             фотографии помогут вам забыть о политике и экономике.</p>
         </section>
       </section>
 
       <section class="gallery">
         <h3 class="visually-hidden">фотогалерея</h3>
-        <ul class="galley__list">
+        <ul class="gallery__list">
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <img class="gallery__image" src="#" width="280" height="280" alt="дорога в Седону">

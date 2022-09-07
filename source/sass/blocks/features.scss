@@ -1,7 +1,27 @@
 .features {
+  text-transform: uppercase;
+}
+
+.features__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.features__item-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__wrap {
+  max-width: 289px;
+  margin: 0 auto;
+}
+
+.features__photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
 
 .features__header {
@@ -36,11 +56,16 @@
 .features__sublist {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: $white;
   color: $main-font;
 }
 
 .features__subitem .features__header {
   color: $black;
+}
+
+.features__subitem {
+  max-width: 282px;
+  margin: 0 auto;
 }

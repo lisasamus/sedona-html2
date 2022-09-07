@@ -1,0 +1,20 @@
+.intro {
+  text-transform: uppercase;
+  max-width: 285px;
+  margin: 0 auto;
+}
+
+.intro__heading {
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+}
+
+.intro__description {
+  text-align: center;
+  margin: 0;
+  color: $main-font;
+}

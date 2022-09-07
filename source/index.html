@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Сайт города Седона</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/32.ico">
   <link rel="icon" href="img/favicon/152.svg">
   <link href="./css/style.css" rel="stylesheet">
@@ -26,10 +27,10 @@
             <a class="main-nav__link main-nav__link--current">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href='#'>фото и видео</a>
+            <a class="main-nav__link" href='catalog.html'>фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href='#'>форма отзыва</a>
+            <a class="main-nav__link" href='form.html'>форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href='#'>html academy</a>
@@ -41,11 +42,10 @@
     <main>
       <section class="hero">
         <div class="hero__wrapper">
-          <img class="hero__background-img" src="../source/img/mobile-img/hero.jpg" width="320" height="389"
-            alt="горы в Седоне">
-          <img class="hero__text-img" src="../source/img/icons/hero-text.svg" width="282" height="214" alt="welcome to the gorgeous.
+          <img class="hero__background-img" src="img/mobile-img/hero.jpg" width="320" height="389" alt="горы в Седоне">
+          <img class="hero__text-img" src="img/icons/hero-text.svg" width="282" height="214" alt="welcome to the gorgeous.
           Sedona - because the Grand Canyon sucks">
-          <img class="hero__triangle-img" src="../source/img/icons/hero-decor.svg" width="320" height="57" alt="">
+          <img class="hero__triangle-img" src="img/icons/hero-decor.svg" width="320" height="57" alt="">
         </div>
         <section class="hero__about">
           <h1 class="visually-hidden">Сайт туристического города Седона</h1>
@@ -54,67 +54,73 @@
         </section>
       </section>
 
-      <h2 class="visually-hidden">преимущества Седоны</h2>
-      <ul class="features">
-        <li class="features__item features__item--photo">
-          <div class="features__wrap">
-            <h3 class="features__header">настоящий городок</h3>
-            <span class="features__number">— №1 —</span>
-            <p class="features__text">седона не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
-          <img class="features__photo" src="img/mobile-img/city.jpg" width="320" height="260" alt="улица города Седона">
+      <section class="features">
+        <h2 class="visually-hidden">преимущества Седоны</h2>
+        <ul class="features__list">
+          <li class="features__item features__item--photo">
+            <div class="features__item-wrap">
+              <div class="features__wrap">
+                <h3 class="features__header">настоящий городок</h3>
+                <span class="features__number">— №1 —</span>
+                <p class="features__text">седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <img class="features__photo" src="img/mobile-img/city.jpg" width="320" height="260"
+                alt="улица города Седона">
+            </div>
+            <ul class="features__sublist">
+              <li class="features__subitem">
+                <h3 class="features__header">жилье</h3>
+                <img class="features__promo-photo" src="img/icons/icon-house.svg" width="40" height="40"
+                  alt="иконка-дом">
+                <p class="features__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
 
-          <ul class="features__sublist">
-            <li class="features__subitem">
-              <h3 class="features__header">жилье</h3>
-              <img class="features__promo-photo" src="img/icons/icon-house.svg" width="40" height="40" alt="иконка-дом">
-              <p class="features__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
+              <li class="features__subitem">
+                <h3 class="features__header">еда</h3>
+                <img class="features__promo-photo" src="img/icons/icon-burger.svg" width="40" height="40"
+                  alt="иконка-бургер">
+                <p class="features__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
 
-            <li class="features__subitem">
-              <h3 class="features__header">еда</h3>
-              <img class="features__promo-photo" src="img/icons/icon-burger.svg" width="40" height="40"
-                alt="иконка-бургер">
-              <p class="features__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
+              <li class="features__subitem">
+                <h3 class="features__header">сувениры</h3>
+                <img class="features__promo-photo" src="img/icons/icon-gift.svg" width="40" height="40"
+                  alt="иконка-сувенир">
+                <p class="features__text">не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
 
-            <li class="features__subitem">
-              <h3 class="features__header">сувениры</h3>
-              <img class="features__promo-photo" src="img/icons/icon-gift.svg" width="40" height="40"
-                alt="иконка-сувенир">
-              <p class="features__text">не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
-        </li>
+          <li class="features__item features__item--photo">
+            <div class="features__item-wrap">
+              <div class="features__wrap">
+                <h3 class=" features__header">там есть мост дьявола</h3>
+                <span class="features__number">— №2 —</span>
+                <p class="features__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+              </div>
+              <img class="features__photo" src="img/mobile-img/bridge.jpg" width="320" height="260" alt="мост дьявола">
+            </div>
+          </li>
 
-        <li class="features__item features__item--photo">
-          <div class="features__wrap">
-            <h3 class=" features__header">там есть мост дьявола</h3>
-            <span class="features__number">— №2 —</span>
-            <p class="features__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
-          </div>
-          <img class="features__photo" src="img/mobile-img/bridge.jpg" width="320" height="260" alt="мост дьявола">
-        </li>
+          <li class="features__item">
+            <h3 class="features__header">небольшая площадь</h3>
+            <span class="features__number">— №3 —</span>
+            <p class="features__text">все интересные места находятся очень близко</p>
+          </li>
 
-        <li class="features__item">
-          <h3 class="features__header">небольшая площадь</h3>
-          <span class="features__number">— №3 —</span>
-          <p class="features__text">все интересные места находятся очень близко</p>
-        </li>
+          <li class="features__item">
+            <h3 class="features__header">красивая дорога</h3>
+            <span class="features__number">— №4 —</span>
+            <p class="features__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+          </li>
 
-        <li class="features__item">
-          <h3 class="features__header">красивая дорога</h3>
-          <span class="features__number">— №4 —</span>
-          <p class="features__text">ехать в седону из лас-вегаса совсем не скучно!</p>
-        </li>
-
-        <li class="features__item">
-          <h3 class="features__header">мало туристов</h3>
-          <span class="features__number">— №5 —</span>
-          <p class="features__text">большинство едет в гранд каньон и толпится там</p>
-        </li>
-      </ul>
-
+          <li class="features__item">
+            <h3 class="features__header">мало туристов</h3>
+            <span class="features__number">— №5 —</span>
+            <p class="features__text">большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
       <section class="booking">
         <h2 class="visually-hidden">бронирование гостиницы</h2>
         <p class="booking__header">заинтересовались?</p>

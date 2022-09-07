@@ -4,16 +4,15 @@
 
 .page__wrapper {
   min-height: 100%;
-  width: 320px;
+  width: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
 }

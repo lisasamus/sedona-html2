@@ -1,0 +1,25 @@
+.review {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.review__block {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.review__mark {
+  text-transform: uppercase;
+  color: $mark-font;
+  margin: 0;
+}

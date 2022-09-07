@@ -1,0 +1,27 @@
+.userdata__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.userdata__input {
+  background-color: $light-background;
+  border: none;
+}
+
+.userdata__icon-wrap {
+  background-color: $userdata-icon-bgc;
+}
+
+.userdata__input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+}
+
+.userdata__input--phone::placeholder,
+.userdata__input--email::placeholder {
+  color: $placeholder-font;
+}

@@ -1,6 +1,7 @@
 .booking {
   background-color: $white;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .booking__header {
@@ -8,6 +9,13 @@
   font-size: 21px;
   line-height: 26px;
   color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+.booking__info {
+  margin: 0;
+  padding: 0;
 }
 
 .booking__button {
