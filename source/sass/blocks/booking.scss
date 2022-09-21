@@ -1,0 +1,31 @@
+.booking {
+  background-color: $white;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.booking__header {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+.booking__info {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.booking__button {
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .booking__wrap {
+    max-width: 435px;
+    margin: 0 auto;
+  }
+}

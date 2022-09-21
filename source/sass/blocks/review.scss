@@ -1,0 +1,39 @@
+.review {
+  margin: 0 auto;
+  background-color: $white;
+}
+
+.review__block {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.review__mark {
+  text-transform: uppercase;
+  color: $mark-font;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    max-width: 648px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    max-width: 960px;
+  }
+}

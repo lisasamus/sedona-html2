@@ -1,0 +1,21 @@
+.header {
+  background-color: $white;
+  text-transform: uppercase;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    position: relative;
+  }
+
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+  }
+}
