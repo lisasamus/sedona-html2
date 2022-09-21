@@ -1,6 +1,6 @@
 .review {
-  max-width: 280px;
   margin: 0 auto;
+  background-color: $white;
 }
 
 .review__block {
@@ -22,4 +22,18 @@
   text-transform: uppercase;
   color: $mark-font;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    max-width: 648px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    max-width: 960px;
+  }
 }

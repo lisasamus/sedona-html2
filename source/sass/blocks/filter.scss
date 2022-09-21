@@ -1,4 +1,4 @@
-.radio__list {
+.filter__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -8,15 +8,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .radio {
-    max-width: 648px;
+  .filter {
     grid-column: 1/-1;
-    margin: 0 auto;
   }
 
-  .radio__list {
+  .filter__list {
+    max-width: 540px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    margin: 0 auto;
+  }
+
+  .filter__list-checkbox {
+    max-width: 450px;
+  }
+
+  .filter__item {
+    margin: auto 0;
   }
 }

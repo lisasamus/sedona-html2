@@ -25,3 +25,16 @@
 .userdata__input--email::placeholder {
   color: $placeholder-font;
 }
+
+@media (min-width: $tablet-width) {
+  .userdata {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .userdata {
+    max-width: 960px;
+  }
+}

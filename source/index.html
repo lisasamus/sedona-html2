@@ -23,7 +23,7 @@
         </button>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
+          <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current">главная</a>
           </li>
           <li class="main-nav__item">
@@ -47,17 +47,17 @@
           Sedona - because the Grand Canyon sucks">
           <img class="hero__triangle-img" src="img/icons/hero-decor.svg" width="320" height="57" alt="">
         </div>
-        <section class="hero__about">
+        <section class="intro">
           <h1 class="visually-hidden">Сайт туристического города Седона</h1>
-          <p class="hero__title">седона — небольшой городок в аризоне, заслуживающий большего!</p>
-          <p class="hero__text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+          <p class="intro__heading">седона — небольшой городок в аризоне, заслуживающий большего!</p>
+          <p class="intro__description">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </section>
       </section>
 
       <section class="features">
         <h2 class="visually-hidden">преимущества Седоны</h2>
         <ul class="features__list">
-          <li class="features__item features__item--photo">
+          <li class="features__item features__item--photo features__item-1">
             <div class="features__item-wrap">
               <div class="features__wrap">
                 <h3 class="features__header">настоящий городок</h3>
@@ -91,7 +91,7 @@
             </ul>
           </li>
 
-          <li class="features__item features__item--photo">
+          <li class="features__item features__item--photo features__item-2">
             <div class="features__item-wrap">
               <div class="features__wrap">
                 <h3 class=" features__header">там есть мост дьявола</h3>
@@ -102,19 +102,19 @@
             </div>
           </li>
 
-          <li class="features__item">
+          <li class="features__item features__item-3">
             <h3 class="features__header">небольшая площадь</h3>
             <span class="features__number">— №3 —</span>
             <p class="features__text">все интересные места находятся очень близко</p>
           </li>
 
-          <li class="features__item">
+          <li class="features__item features__item-4">
             <h3 class="features__header">красивая дорога</h3>
             <span class="features__number">— №4 —</span>
             <p class="features__text">ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
 
-          <li class="features__item">
+          <li class="features__item features__item-5">
             <h3 class="features__header">мало туристов</h3>
             <span class="features__number">— №5 —</span>
             <p class="features__text">большинство едет в гранд каньон и толпится там</p>
@@ -123,11 +123,13 @@
       </section>
       <section class="booking">
         <h2 class="visually-hidden">бронирование гостиницы</h2>
-        <p class="booking__header">заинтересовались?</p>
-        <p class="booking__info">укажите предполагаемые даты поездки, и мы покажем вам
-          лучшие предложения гостиниц в седоне
-        </p>
-        <a class="button booking__button" href="#">найти гостиницу</a>
+        <div class="booking__wrap">
+          <p class="booking__header">заинтересовались?</p>
+          <p class="booking__info">укажите предполагаемые даты поездки, и мы покажем вам
+            лучшие предложения гостиниц в седоне
+          </p>
+          <a class="button booking__button" href="#">найти гостиницу</a>
+        </div>
       </section>
 
       <section class="map">
@@ -138,36 +140,38 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__hashteg">#visitsedona</span>
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <a class="footer__social-link" href="#">
-            <img class="footer__social-icon" src="img/icons/vk.svg" alt="vkontacte" width="24" height="24">
-          </a>
-        </li>
+      <div class="footer__wrap">
+        <span class="footer__hashtag">#visitsedona</span>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-icon" src="img/icons/vk.svg" alt="vkontacte" width="24" height="24">
+            </a>
+          </li>
 
-        <li class="footer__social-item">
-          <a class="footer__social-link" href="#">
-            <img class="footer__social-icon" src="img/icons/telegram.svg" alt="telegram" width="24" height="24">
-          </a>
-        </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-icon" src="img/icons/telegram.svg" alt="telegram" width="24" height="24">
+            </a>
+          </li>
 
-        <li class="footer__social-item">
-          <a class="footer__social-link" href="#">
-            <img class="footer__social-icon" src="img/icons/youtube.svg" alt="youtube" width="24" height="24">
-          </a>
-        </li>
-      </ul>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-icon" src="img/icons/youtube.svg" alt="youtube" width="24" height="24">
+            </a>
+          </li>
+        </ul>
 
-      <div class="footer__authors">
-        <p class="footer__authors-text">разработано</p>
-        <a class="footer__authors-link" href="#">
-          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-              fill="black" />
-          </svg>
-        </a>
+        <div class="footer__authors">
+          <a class="footer__authors-link" href="#">
+            <p class="footer__authors-text">разработано</p>
+            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
   </div>

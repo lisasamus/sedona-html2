@@ -29,8 +29,8 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href='catalog.html'>фото и видео</a>
           </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">форма отзыва</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href='#'>html academy</a>
@@ -53,7 +53,7 @@
       </section>
 
       <form action="https://echo.htmlacademy.ru" method="POST" class="review">
-        <fieldset class="review__block">
+        <fieldset class="review__block userdata">
           <h2 class="review__heading">представьтесь:</h2>
           <ul class="userdata__list">
             <li class="userdata__item">
@@ -74,78 +74,82 @@
           </ul>
         </fieldset>
 
-        <fieldset class="review__block">
+        <fieldset class="review__block userdata">
           <h2 class="review__heading">контактная информация</h2>
           <ul class="userdata__list">
 
             <li class="userdata__item">
               <label for="userdata-phone">контактный телефон*:</label>
-              <input class="userdata__input userdata__input--phone" type="tel" name="phone" id="userdata-phone"
-                placeholder="Введите телефон">
-              <span class="userdata__icon-wrap">
-                <img class="userdata__icon" src="img/icons/icon-phone.svg" width="18" height="18" alt="иконка телефон">
-              </span>
+              <div class="userdata__wrap">
+                <input class="userdata__input userdata__input--phone" type="tel" name="phone" id="userdata-phone"
+                  placeholder="Введите телефон">
+                <span class="userdata__icon-wrap">
+                  <img class="userdata__icon" src="img/icons/icon-phone.svg" width="18" height="18"
+                    alt="иконка телефон">
+                </span>
+              </div>
             </li>
 
             <li class="userdata__item">
               <label for="userdata-email">электронная почта*</label>
-              <input class="userdata__input userdata__input--email" type="text" name="email" id="userdata-email"
-                placeholder="Введите e-mail">
-              <span class="userdata__icon-wrap">
-                <img class="userdata__icon" src="img/icons/icon-mail.svg" width="18" height="18" alt="иконка email">
-              </span>
+              <div class="userdata__wrap">
+                <input class="userdata__input userdata__input--email" type="text" name="email" id="userdata-email"
+                  placeholder="Введите e-mail">
+                <span class="userdata__icon-wrap">
+                  <img class="userdata__icon" src="img/icons/icon-mail.svg" width="18" height="18" alt="иконка email">
+                </span>
+              </div>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="review__block">
+        <fieldset class="review__block filter">
           <h2 class="review__heading">ваше общее впечатление</h2>
-          <ul class="radio__list">
-            <li class="radio__item">
-              <input class="radio__input visually-hidden" type="radio" name="assessment" id="assessment-positive"
+          <ul class="filter__list filter__list-radio">
+            <li class="filter__item">
+              <input class="filter__input visually-hidden" type="radio" name="assessment" id="assessment-positive"
                 checked>
-              <label class="radio__label" for="assessment-positive">Скорее положительное</label>
+              <label class="filter__label" for="assessment-positive">Скорее положительное</label>
             </li>
-            <li class="radio__item">
-              <input class="radio__input visually-hidden" type="radio" name="assessment" id="assessment-negative">
-              <label class="radio__label" for="assessment-negative">Скорее отрицательное</label>
+            <li class="filter__item">
+              <input class="filter__input visually-hidden" type="radio" name="assessment" id="assessment-negative">
+              <label class="filter__label" for="assessment-negative">Скорее отрицательное</label>
             </li>
-            <li class="radio__item">
-              <input class="radio__input visually-hidden" type="radio" name="assessment" id="assessment-not-sure">
-              <label class="radio__label" for="assessment-not-sure">Затрудняюсь ответить</label>
+            <li class="filter__item">
+              <input class="filter__input visually-hidden" type="radio" name="assessment" id="assessment-not-sure">
+              <label class="filter__label" for="assessment-not-sure">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="review__block">
+        <fieldset class="review__block filter">
           <h2 class="review__heading">посещенные достопримечательности:</h2>
-          <ul class="checkbox__list">
-            <li class="checkbox__item">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="bridge" id="devils-bridge" checked>
-              <label class="checkbox__label" for="devils-bridge">Мост Дьявола</label>
+          <ul class="filter__list filter__list-checkbox">
+            <li class="filter__item">
+              <input class="filter__input visually-hidden" type="checkbox" name="bridge" id="devils-bridge" checked>
+              <label class="filter__label" for="devils-bridge">Мост Дьявола</label>
             </li>
 
-            <li class="checkbox__item">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="mountain" id="mountain-bell" checked>
-              <label class="checkbox__label" for="mountain-bell">Гора-Колокол</label>
+            <li class="filter__item">
+              <input class="filter__input visually-hidden" type="checkbox" name="mountain" id="mountain-bell" checked>
+              <label class="filter__label" for="mountain-bell">Гора-Колокол</label>
             </li>
 
-            <li class="checkbox__item">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="slide-park" id="places-slide-park"
+            <li class="filter__item">
+              <input class="filter__input visually-hidden" type="checkbox" name="slide-park" id="places-slide-park"
                 checked>
-              <label class="checkbox__label" for="places-slide-park">Слайд-парк</label>
+              <label class="filter__label" for="places-slide-park">Слайд-парк</label>
             </li>
 
-            <li class="checkbox__item">
-              <input class="checkbox__input assessment__input--checkbox visually-hidden" type="checkbox" name="rock"
-                id="red-rock">
-              <label class="checkbox__label" for="red-rock">Слайд-парк</label>
+            <li class="filter__item">
+              <input class="filter__input visually-hidden" type="checkbox" name="rock" id="red-rock">
+              <label class="filter__label" for="red-rock">Слайд-парк</label>
             </li>
           </ul>
         </fieldset>
 
-        <div class="review__block">
-          <label class="review__heading">опишите свои эмоции:</label>
+        <div class="review__block feedback">
+          <label class="review__heading" for="emotions-review">опишите свои эмоции:</label>
           <textarea class="feedback__review" name="feedback-text" id="emotions-review">
             Опишите подробно все свои восторги
           </textarea>
@@ -159,36 +163,38 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__hashteg">#visitsedona</span>
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <a class="footer__social-link">
-            <img class="footer__social-icon" src="img/icons/vk.svg" alt="vkontacte" width="24" height="24">
-          </a>
-        </li>
+      <div class="footer__wrap">
+        <span class="footer__hashtag">#visitsedona</span>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link">
+              <img class="footer__social-icon" src="img/icons/vk.svg" alt="vkontacte" width="24" height="24">
+            </a>
+          </li>
 
-        <li class="footer__social-item">
-          <a class="footer__social-link">
-            <img class="footer__social-icon" src="img/icons/telegram.svg" alt="telegram" width="24" height="24">
-          </a>
-        </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link">
+              <img class="footer__social-icon" src="img/icons/telegram.svg" alt="telegram" width="24" height="24">
+            </a>
+          </li>
 
-        <li class="footer__social-item">
-          <a class="footer__social-link">
-            <img class="footer__social-icon" src="img/icons/youtube.svg" alt="youtube" width="24" height="24">
-          </a>
-        </li>
-      </ul>
+          <li class="footer__social-item">
+            <a class="footer__social-link">
+              <img class="footer__social-icon" src="img/icons/youtube.svg" alt="youtube" width="24" height="24">
+            </a>
+          </li>
+        </ul>
 
-      <div class="footer__authors">
-        <p class="footer__authors-text">разработано</p>
-        <a class="footer__authors-link" href="#">
-          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-              fill="black" />
-          </svg>
-        </a>
+        <div class="footer__authors">
+          <a class="footer__authors-link" href="#">
+            <p class="footer__authors-text">разработано</p>
+            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
   </div>

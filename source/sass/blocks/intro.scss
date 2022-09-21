@@ -1,6 +1,6 @@
 .intro {
   text-transform: uppercase;
-  max-width: 285px;
+  max-width: 272px;
   margin: 0 auto;
 }
 
@@ -17,4 +17,16 @@
   text-align: center;
   margin: 0;
   color: $main-font;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    max-width: 520px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    max-width: 483px;
+  }
 }

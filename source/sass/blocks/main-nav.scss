@@ -21,3 +21,18 @@
   font-size: 18px;
   line-height: 26px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    background-color: $white;
+  }
+
+  .main-nav__link {
+    color: $black;
+  }
+
+  .main-nav__link--current {
+    color: $current-link;
+  }
+}
