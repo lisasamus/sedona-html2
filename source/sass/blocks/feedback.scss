@@ -1,3 +1,7 @@
+.feedback {
+  margin: 0 20px;
+}
+
 .feedback__review {
   background-color: $light-background;
   border: none;
@@ -6,4 +10,22 @@
   font-size: 18px;
   line-height: 26px;
   color: $placeholder-font;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    grid-column: 1/-1;
+  }
+
+  .feedback__wrap {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__wrap {
+    max-width: 768px;
+  }
 }

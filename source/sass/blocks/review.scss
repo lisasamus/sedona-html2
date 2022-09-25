@@ -5,7 +5,7 @@
 
 .review__block {
   border: none;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
 }
 
@@ -18,22 +18,54 @@
   text-transform: uppercase;
 }
 
+.review__button-wrap {
+  max-width: 281px;
+}
+
 .review__mark {
   text-transform: uppercase;
   color: $mark-font;
   margin: 0;
+  display: block;
+}
+
+.review__button {
+  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .review {
-    max-width: 648px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .review__button-wrap {
+    max-width: 648px;
+    grid-column: 1/-1;
+  }
+
+  .review__button-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review__button {
+    max-width: 324px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review {
     max-width: 960px;
+  }
+
+  .review__button-wrap {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .review__button {
+    max-width: 384px;
   }
 }
