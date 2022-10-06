@@ -149,15 +149,19 @@
         </fieldset>
 
         <div class="review__block feedback">
-          <label class="review__heading" for="emotions-review">опишите свои эмоции:</label>
-          <textarea class="feedback__review" name="feedback-text" id="emotions-review">
+          <div class="feedback__wrap">
+            <label class="review__heading" for="emotions-review">опишите свои эмоции:</label>
+            <textarea class="feedback__review" name="feedback-text" id="emotions-review">
             Опишите подробно все свои восторги
           </textarea>
+          </div>
         </div>
 
         <div class="review__button-wrap">
-          <button class="button review__button" type="submit">отправить отзыв</button>
-          <p class="review__mark">* - обязательные поля</p>
+          <div class="review__button-wrapper">
+            <button class="button review__button" type="submit">отправить отзыв</button>
+            <p class="review__mark">* - обязательные поля</p>
+          </div>
         </div>
       </form>
     </main>
