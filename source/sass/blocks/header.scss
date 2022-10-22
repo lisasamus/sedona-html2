@@ -16,8 +16,11 @@
   }
 
   .header__logo {
+    display: block;
+    justify-content: unset;
     position: absolute;
     left: 50%;
-    right: 50%;
+    top: 0;
+    transform: translateX(-50%);
   }
 }

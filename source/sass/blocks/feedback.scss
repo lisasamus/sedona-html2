@@ -1,11 +1,16 @@
-.feedback {
-  margin: 0 20px;
+.feedback__wrap {
+  margin: 0 0 56px 0;
+}
+
+.feedback__review-wrap {
+  padding: 0 20px;
 }
 
 .feedback__review {
   background-color: $light-background;
   border: none;
   width: 100%;
+  min-height: 150px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -21,6 +26,11 @@
   .feedback__wrap {
     max-width: 648px;
     margin: 0 auto;
+    padding: 0 0 48px 0;
+  }
+
+  .feedback__review-wrap {
+    padding: 0;
   }
 }
 

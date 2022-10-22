@@ -27,3 +27,61 @@
 .gallery__like-count {
   font-weight: 700;
 }
+
+.gallery__link {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    max-width: 648px;
+  }
+
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__item:first-child {
+    grid-column: 1/-1;
+  }
+
+  .gallery__description {
+    background-color: $light-background;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    max-width: 1200px;
+  }
+
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gallery__item:first-child {
+    grid-column: 1/-1;
+  }
+
+  .gallery__item {
+    position: relative;
+  }
+
+  .gallery__description {
+    width: 100%;
+    background-color: $placeholder-font;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    padding: 0 20px;
+  }
+
+  .gallery__title {
+    color: $white;
+  }
+}
