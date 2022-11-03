@@ -1,17 +1,44 @@
+.userdata {
+  margin: 0;
+  padding: 0;
+}
+
 .userdata__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 39px 0;
   text-transform: uppercase;
+}
+
+.userdata__item {
+  margin: 0 0 16px 0;
+  padding: 0 20px;
+
+  label {
+    padding: 0 0 0 16px;
+  }
 }
 
 .userdata__input {
   background-color: $light-background;
   border: none;
+  width: 100%;
+  height: 58px;
+}
+
+.userdata__wrap {
+  display: flex;
+  align-items: center;
 }
 
 .userdata__icon-wrap {
   background-color: $userdata-icon-bgc;
+  padding: 17px 20px;
+}
+
+.userdata__icon {
+  width: 18px;
+  height: 18px;
 }
 
 .userdata__input::placeholder {
@@ -19,6 +46,7 @@
   font-size: 18px;
   line-height: 26px;
   color: black;
+  padding: 0 0 0 16px;
 }
 
 .userdata__input--phone::placeholder,
@@ -27,14 +55,36 @@
 }
 
 @media (min-width: $tablet-width) {
+  .userdata__list {
+    padding: 0 0 14px 0;
+  }
+
+  .userdata__item {
+    padding: 0;
+  }
+
   .userdata {
-    max-width: 648px;
-    margin: 0 auto;
+    padding: 0px 43px 0 60px;
+    margin: 0 0 48px 0;
+  }
+
+  .userdata-contacts {
+    padding: 0px 60px 0 43px;
+    border-left: solid 1px $disabled;
   }
 }
 
 @media (min-width: $desktop-width) {
   .userdata {
     max-width: 960px;
+  }
+
+  .userdata {
+    padding: 0px 63px 0 0px;
+    margin: 0 0 56px 0;
+  }
+
+  .userdata-contacts {
+    padding: 0px 0px 0 63px;
   }
 }

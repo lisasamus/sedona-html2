@@ -38,17 +38,35 @@
         </ul>
       </nav>
     </header>
+    <script>
+      const navMain = document.querySelector('.main-nav');
+      const navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 
     <main>
       <section class="hero">
         <div class="hero__wrapper">
           <img class="hero__background-img hero__background-img--short" src="img/mobile-img/hero.jpg" width="320"
             height="157" alt="горы в Седоне">
+          <img class="hero__text-img hero__text-img--short" src="img/icons/sedona.svg" width="229" height="39"
+            alt="sedona">
           <img class="hero__triangle-img" src="img/icons/hero-decor.svg" width="320" height="57" alt="">
         </div>
         <section class="intro">
-          <h1 class="intro__heading">фото и видео</h1>
-          <p class="intro__description">не можете решиться на путешествие из-за курса?
+          <h1 class="intro__heading intro__heading--large">фото и видео</h1>
+          <p class="intro__description intro__description--hero">не можете решиться на путешествие из-за курса?
             фотографии помогут вам забыть о политике и экономике.</p>
         </section>
       </section>
@@ -58,13 +76,20 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="#" width="280" height="280" alt="дорога в Седону">
+              <img class="gallery__image" src="img/mobile-img/road.jpg" width="280" height="280" alt="дорога в Седону">
             </a>
             <div class="gallery__description">
-              <p class="gallery__title">неродные просторы</p>
-              <p class="gallery__author">Автор фото: Борис</p>
+              <div class="gallery__wrap">
+                <p class="gallery__title">неродные просторы</p>
+                <p class="gallery__author">Автор фото: Борис</p>
+              </div>
               <div class="gallery__like">
-                <img class="gallery__icon" src="img/icons/like-icon.svg" width="23" height="21" alt="лайкнуть">
+                <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3"
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                    fill="black" />
+                </svg>
                 <span class="gallery__like-count">1350</span>
               </div>
             </div>
@@ -72,13 +97,21 @@
 
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="#" width="280" height="280" alt="местное цветущее растение">
+              <img class="gallery__image" src="img/mobile-img/flora.jpg" width="280" height="280"
+                alt="местное цветущее растение">
             </a>
             <div class="gallery__description">
-              <p class="gallery__title">местная растительность</p>
-              <p class="gallery__author">Автор фото: Сергей</p>
+              <div class="gallery__wrap">
+                <p class="gallery__title">местная растительность</p>
+                <p class="gallery__author">Автор фото: Сергей</p>
+              </div>
               <div class="gallery__like">
-                <img class="gallery__icon" src="img/icons/like-icon.svg" width="23" height="21" alt=лайкнуть"">
+                <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3"
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                    fill="black" />
+                </svg>
                 <span class="gallery__like-count">1350</span>
               </div>
             </div>
@@ -87,13 +120,20 @@
 
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="#" width="280" height="280" alt="дорога в горах">
+              <img class="gallery__image" src="img/mobile-img/forest.jpg" width="280" height="280" alt="дорога в горах">
             </a>
             <div class="gallery__description">
-              <p class="gallery__title">дорога на север</p>
-              <p class="gallery__author">Автор фото: Петр</p>
+              <div class="gallery__wrap">
+                <p class="gallery__title">дорога на север</p>
+                <p class="gallery__author">Автор фото: Петр</p>
+              </div>
               <div class="gallery__like">
-                <img class="gallery__icon" src="img/icons/like-icon.svg" width="23" height="21" alt="лайкнуть">
+                <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3"
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                    fill="black" />
+                </svg>
                 <span class="gallery__like-count">1350</span>
               </div>
             </div>
@@ -101,13 +141,20 @@
 
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="#" width="280" height="280" alt="мост из скалы">
+              <img class="gallery__image" src="img/mobile-img/bridge.jpg" width="280" height="280" alt="мост из скалы">
             </a>
             <div class="gallery__description">
-              <p class="gallery__title">мост дьявола</p>
-              <p class="gallery__author">Автор фото: Петр</p>
+              <div class="gallery__wrap">
+                <p class="gallery__title">мост дьявола</p>
+                <p class="gallery__author">Автор фото: Петр</p>
+              </div>
               <div class="gallery__like">
-                <img class="gallery__icon" src="img/icons/like-icon.svg" width="23" height="21" alt="лайкнуть">
+                <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3"
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                    fill="black" />
+                </svg>
                 <span class="gallery__like-count">1350</span>
               </div>
             </div>
@@ -118,13 +165,16 @@
       <section class="presentation">
         <h2 class="visually-hidden">видеопрезентация города Седона</h2>
         <div class="intro">
-          <p class="intro__heading">все еще сомневаетесь?</p>
-          <p class="intro__description">смотрите видеопрезентацию и скорее за билетами, пока они
-            не подорожали в очередной раз!</p>
+          <p class="intro__heading intro__heading--large">все еще сомневаетесь?</p>
+          <p class="intro__description intro__description--presentation">смотрите видеопрезентацию и скорее за билетами,
+            пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video">
-          <img class="video__img" src="" alt="видеопрезентация Седоны" width="280" height="177">
-          <img class="video__icon" src="img/icons/icon-video.svg" alt="включить видео" width="48" height="54">
+          <div class="video__wrap">
+            <img class="video__img" src="img/mobile-img/video-mobile.jpg" alt="видеопрезентация Седоны" width="280"
+              height="177">
+            <img class="video__icon" src="img/icons/icon-video.svg" alt="включить видео" width="48" height="54">
+          </div>
         </div>
       </section>
 

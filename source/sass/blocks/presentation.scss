@@ -1,0 +1,18 @@
+.presentation {
+  padding: 17px 0 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation {
+    max-width: 648px;
+    margin: 0 auto;
+    padding: 62px 0 40px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .presentation {
+    max-width: 800px;
+    padding: 62px 0 90px 0;
+  }
+}

@@ -1,4 +1,38 @@
 .video {
-  max-width: 280px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.video__img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video__wrap {
+  position: relative;
+  padding: 0 20px;
+}
+
+.video__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width:$tablet-width) {
+  .video__wrap {
+    padding: 70px 60px 0px 60px;
+  }
+
+  .video__img {
+    height: 500px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .video__wrap {
+    padding: 70px 0 0 0;
+  }
 }

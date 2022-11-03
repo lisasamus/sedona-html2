@@ -4,34 +4,40 @@
 }
 
 .review__block {
+  margin: 0;
   border: none;
-  margin: 0 20px;
-  padding: 0;
 }
 
 .review__heading {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
   text-transform: uppercase;
-}
-
-.review__button-wrap {
-  max-width: 281px;
+  border-top: solid 1px $disabled;
+  margin: 0;
+  padding: 24px 0 20px 0;
 }
 
 .review__mark {
+  display: flex;
+  flex-direction: row-reverse;
   text-transform: uppercase;
   color: $mark-font;
-  margin: 0;
-  display: block;
+  margin: auto 0;
 }
 
 .review__button {
-  margin: 0 20px;
+  margin: 0;
+  padding: 18.5px 0 13.5px 0;
 }
+
+.review__button-wrap {
+  padding: 0 20px;
+  margin: 0 0 24px 0;
+}
+
 
 @media (min-width: $tablet-width) {
   .review {
@@ -39,20 +45,42 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .review__heading {
+    border-top: unset;
+    padding: 0 0 28px 0;
+    display: block;
+  }
+
   .review__button-wrap {
-    max-width: 648px;
     grid-column: 1/-1;
+    padding: 0 60px 0 60px;
+    margin: 0 0 64px 0;
   }
 
   .review__button-wrapper {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .review__button {
     max-width: 324px;
+    padding: 18px 60px 13px 50px;
   }
+
+  .review__heading--line {
+    position: relative;
+  }
+
+  /* .review__heading--line::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 280px;
+    height: 1px;
+    background-color: $review-line;
+  }*/
 }
 
 @media (min-width: $desktop-width) {
@@ -62,10 +90,17 @@
 
   .review__button-wrap {
     max-width: 768px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0;
   }
 
   .review__button {
     max-width: 384px;
+    padding: 17px 80px 15px 90px;
+  }
+
+  .review__button-wrapper {
+    margin: 0 0 64px 0;
   }
 }
