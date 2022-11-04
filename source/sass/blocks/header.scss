@@ -2,12 +2,16 @@
   background-color: $white;
   text-transform: uppercase;
   position: relative;
+  min-height: 56px;
 }
 
 .header__logo {
   display: flex;
   justify-content: center;
   z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {

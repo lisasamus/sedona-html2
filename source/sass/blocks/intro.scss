@@ -50,6 +50,11 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    max-width: 484px;
+    max-width: 436px;
+    padding: 0;
+  }
+
+  .intro__description {
+    margin: 0 0 44px 0;
   }
 }
