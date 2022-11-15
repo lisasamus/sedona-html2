@@ -18,44 +18,25 @@
       </a>
 
       <nav class="main-nav main-nav--nojs main-nav--closed">
-        <div class="main-nav_wrap">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current">главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='catalog.html'>фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='form.html'>форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='#'>html academy</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='catalog.html'>фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='form.html'>форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>html academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <script>
-      const navMain = document.querySelector('.main-nav');
-      const navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function () {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
 
     <main>
       <section class="hero">
@@ -63,7 +44,7 @@
           <img class="hero__background-img" src="img/mobile-img/hero.jpg" width="320" height="389" alt="горы в Седоне">
           <img class="hero__text-img" src="img/icons/hero-text.svg" width="282" height="214" alt="welcome to the gorgeous.
           Sedona - because the Grand Canyon sucks">
-          <img class="hero__triangle-img" src="img/icons/hero-decor.svg" width="1200" height="56" alt="">
+          <img class="hero__triangle-img" src="img/icons/intro-triangle.svg" width="1200" height="56" alt="">
         </div>
         <section class="intro intro--index">
           <h1 class="visually-hidden">Сайт туристического города Седона</h1>
@@ -86,6 +67,8 @@
               <img class="features__photo" src="img/mobile-img/city.jpg" width="320" height="260"
                 alt="улица города Седона">
             </div>
+          </li>
+          <li class="features__item features__item-sub">
             <ul class="features__sublist">
               <li class="features__subitem">
                 <img class="features__promo-photo" src="img/icons/icon-house.svg" width="40" height="40"
@@ -112,12 +95,12 @@
 
           <li class="features__item features__item--photo features__item-2">
             <div class="features__item-wrap">
+              <img class="features__photo" src="img/mobile-img/bridge.jpg" width="320" height="260" alt="мост дьявола">
               <div class="features__wrap">
                 <h3 class="features__header">там есть мост дьявола</h3>
                 <span class="features__number">— №2 —</span>
                 <p class="features__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
               </div>
-              <img class="features__photo" src="img/mobile-img/bridge.jpg" width="320" height="260" alt="мост дьявола">
             </div>
           </li>
 
@@ -195,5 +178,21 @@
     </footer>
   </div>
 </body>
+<script>
+  const navMain = document.querySelector('.main-nav');
+  const navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 
 </html>

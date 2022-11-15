@@ -26,7 +26,7 @@
 
 .hero__background-img {
   width: 100%;
-  height: 389px;
+  height: 100%;
   object-fit: cover;
   background-color: $mark-font;
 }
@@ -39,6 +39,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 0 32px 0;
+  display: flex;
 }
 
 .hero__text-img {
@@ -56,17 +57,16 @@
 }
 
 .hero__triangle-img {
-  object-fit: cover;
   width: 1200px;
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
   .hero__wrapper {
-    margin-bottom: 0 0 47px 0;
+    margin: 0 0 47px 0;
   }
 
   .hero__background-img {
@@ -85,7 +85,7 @@
 
 @media (min-width: $desktop-width) {
   .hero__wrapper {
-    margin-bottom: 0 0 69px 0;
+    margin: 0 0 69px 0;
   }
 
   .hero__background-img--short {
@@ -96,4 +96,5 @@
     width: 459px;
     height: 80px;
   }
+
 }
