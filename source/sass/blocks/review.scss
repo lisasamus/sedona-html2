@@ -16,8 +16,8 @@
   text-align: center;
   text-transform: uppercase;
   border-top: solid 1px $disabled;
-  margin: 0;
-  padding: 24px 0 20px 0;
+  margin: 0 0 20px 0;
+  padding: 24px 0 0 0;
 }
 
 .review__mark {
@@ -40,21 +40,17 @@
 
 
 @media (min-width: $tablet-width) {
-  .review {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .review__heading {
     border-top: unset;
-    padding: 0 0 28px 0;
+    margin: 0 0 28px 0;
     display: block;
+    font-size: 21px;
   }
 
   .review__button-wrap {
-    grid-column: 1/-1;
-    padding: 0 60px 0 60px;
-    margin: 0 0 64px 0;
+    max-width: 648px;
+    margin: 0 auto 64px auto;
+    padding: 0;
   }
 
   .review__button-wrapper {
@@ -71,16 +67,6 @@
   .review__heading--line {
     position: relative;
   }
-
-  /* .review__heading--line::before {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 280px;
-    height: 1px;
-    background-color: $review-line;
-  }*/
 }
 
 @media (min-width: $desktop-width) {

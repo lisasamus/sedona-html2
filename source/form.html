@@ -46,64 +46,70 @@
             height="157" alt="горы в Седоне">
           <img class="hero__text-img hero__text-img--short" src="img/icons/sedona.svg" width="229" height="39"
             alt="sedona">
-          <img class="hero__triangle-img" src="img/icons/hero-decor.svg" width="320" height="57" alt="">
+          <svg class="hero__triangle-img" preserveAspectRatio='none' width="1200" height="57" viewBox="0 0 1200 57"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z" fill="white" />
+            <path d="M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z" fill="white" />
+          </svg>
         </div>
         <section class="intro">
-          <h1 class="intro__heading intro__heading--large">оставьте свой отзыв</h1>
-          <p class="intro__description">помогоите нашим отелям стать лучше! оставьте отзыв о них,
+          <h1 class="intro__heading intro__heading--form">оставьте свой отзыв</h1>
+          <p class="intro__description intro__description--form">помогоите нашим отелям стать лучше! оставьте отзыв о
+            них,
             а также посещенных вами достопримечательностях</p>
         </section>
       </section>
 
       <form action="https://echo.htmlacademy.ru" method="POST" class="review">
-        <fieldset class="review__block userdata">
-          <h2 class="review__heading">представьтесь:</h2>
-          <ul class="userdata__list">
-            <li class="userdata__item">
-              <label for="userdata-username">имя*</label>
-              <input class="userdata__input userdata__input--username" type="text" name="username"
-                id="userdata-username" placeholder="Петр">
-            </li>
-            <li class="userdata__item">
-              <label for="userdata-surname">фамилия*</label>
-              <input class="userdata__input userdata__input--surname" type="text" name="surname" id="userdata-surname"
-                placeholder="Пустота">
-            </li>
-            <li class="userdata__item">
-              <label for="userdata-middle-name">отчество</label>
-              <input class="userdata__input userdata__input--middle-name" type="text" name="middlename"
-                id="userdata-middle-name" placeholder="Викторович">
-            </li>
-          </ul>
-        </fieldset>
+        <div class="userdata-fieldset-wrap">
+          <fieldset class="review__block userdata">
+            <h2 class="review__heading review__heading--userdata">представьтесь:</h2>
+            <ul class="userdata__list userdata__list--userdata">
+              <li class="userdata__item userdata__item--userdata">
+                <label for="userdata-username">имя*</label>
+                <input class="userdata__input userdata__input--username" type="text" name="username"
+                  id="userdata-username" placeholder="Петр">
+              </li>
+              <li class="userdata__item userdata__item--userdata">
+                <label for="userdata-surname">фамилия*</label>
+                <input class="userdata__input userdata__input--surname" type="text" name="surname" id="userdata-surname"
+                  placeholder="Пустота">
+              </li>
+              <li class="userdata__item userdata__item--userdata">
+                <label for="userdata-middle-name">отчество</label>
+                <input class="userdata__input userdata__input--middle-name" type="text" name="middlename"
+                  id="userdata-middle-name" placeholder="Викторович">
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="review__block userdata userdata-contacts">
-          <h2 class="review__heading">контактная информация</h2>
-          <ul class="userdata__list">
+          <fieldset class="review__block userdata userdata-contacts">
+            <h2 class="review__heading">контактная информация</h2>
+            <ul class="userdata__list userdata__list--contacts">
 
-            <li class="userdata__item">
-              <label for="userdata-phone">контактный телефон*:</label>
-              <div class="userdata__wrap">
-                <input class="userdata__input userdata__input--phone" type="tel" name="phone" id="userdata-phone"
-                  placeholder="Введите телефон">
-                <span class="userdata__icon-wrap">
-                  <img class="userdata__icon" src="img/icons/icon-phone.svg" width="18" height="18"
-                    alt="иконка телефон">
-                </span>
-              </div>
-            </li>
-
-            <li class="userdata__item">
-              <label for="userdata-email">электронная почта*</label>
-              <div class="userdata__wrap">
-                <input class="userdata__input userdata__input--email" type="text" name="email" id="userdata-email"
-                  placeholder="Введите e-mail">
-                <span class="userdata__icon-wrap">
-                  <img class="userdata__icon" src="img/icons/icon-mail.svg" width="18" height="18" alt="иконка email">
-                </span>
-              </div>
-            </li>
-          </ul>
+              <li class="userdata__item userdata__item--contacts">
+                <label for="userdata-phone">контактный телефон*:</label>
+                <div class="userdata__wrap">
+                  <input class="userdata__input userdata__input--phone" type="tel" name="phone" id="userdata-phone"
+                    placeholder="Введите телефон">
+                  <span class="userdata__icon-wrap">
+                    <img class="userdata__icon" src="img/icons/icon-phone.svg" width="18" height="18"
+                      alt="иконка телефон">
+                  </span>
+                </div>
+              </li>
+              <li class="userdata__item userdata__item--contacts">
+                <label for="userdata-email">электронная почта*</label>
+                <div class="userdata__wrap">
+                  <input class="userdata__input userdata__input--email" type="text" name="email" id="userdata-email"
+                    placeholder="Введите e-mail">
+                  <span class="userdata__icon-wrap">
+                    <img class="userdata__icon" src="img/icons/icon-mail.svg" width="18" height="18" alt="иконка email">
+                  </span>
+                </div>
+        </div>
+        </li>
+        </ul>
         </fieldset>
 
         <fieldset class="review__block filter">
@@ -128,23 +134,23 @@
         <fieldset class="review__block filter">
           <h2 class="review__heading review__heading--line">посещенные<br> достопримечательности:</h2>
           <ul class="filter__list filter__list--checkbox">
-            <li class="filter__item">
+            <li class="filter__item filter__item--checkbox">
               <input class="filter__input visually-hidden" type="checkbox" name="bridge" id="devils-bridge" checked>
               <label class="filter__label" for="devils-bridge">Мост Дьявола</label>
             </li>
 
-            <li class="filter__item">
+            <li class="filter__item filter__item--checkbox">
               <input class="filter__input visually-hidden" type="checkbox" name="mountain" id="mountain-bell" checked>
               <label class="filter__label" for="mountain-bell">Гора-Колокол</label>
             </li>
 
-            <li class="filter__item">
+            <li class="filter__item filter__item--checkbox">
               <input class="filter__input visually-hidden" type="checkbox" name="slide-park" id="places-slide-park"
                 checked>
               <label class="filter__label" for="places-slide-park">Слайд-парк</label>
             </li>
 
-            <li class="filter__item">
+            <li class="filter__item filter__item--checkbox">
               <input class="filter__input visually-hidden" type="checkbox" name="rock" id="red-rock">
               <label class="filter__label" for="red-rock">Слайд-парк</label>
             </li>
@@ -155,8 +161,8 @@
           <div class="feedback__wrap">
             <label class="review__heading review__heading--line" for="emotions-review">опишите свои эмоции:</label>
             <div class="feedback__review-wrap">
-              <textarea class="feedback__review" name="feedback-text"
-                id="emotions-review">Опишите подробно все свои восторги</textarea>
+              <textarea class="feedback__review" name="feedback-text" id="emotions-review"
+                placeholder=" Опишите подробно все свои восторги"></textarea>
             </div>
           </div>
         </div>

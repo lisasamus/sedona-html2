@@ -41,15 +41,27 @@
     <main>
       <section class="hero">
         <div class="hero__wrapper">
-          <img class="hero__background-img" src="img/mobile-img/hero.jpg" width="320" height="389" alt="горы в Седоне">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/desktop-img/hero.jpg">
+            <source media="(min-width: 768px)" srcset="img/tablet-img/hero.jpg">
+            <img class="hero__background-img" src="img/mobile-img/hero.jpg" srcset="img/mobile-img/hero@x2.jpg 2x"
+              width="320" height="389" alt="горы в Седоне">
+          </picture>
           <img class="hero__text-img" src="img/icons/hero-text.svg" width="282" height="214" alt="welcome to the gorgeous.
           Sedona - because the Grand Canyon sucks">
-          <img class="hero__triangle-img" src="img/icons/intro-triangle.svg" width="1200" height="56" alt="">
+          <svg class="hero__triangle-img" preserveAspectRatio='none' width="1200" height="57" viewBox="0 0 1200 57"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z" fill="white" />
+            <path d="M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z" fill="white" />
+          </svg>
         </div>
         <section class="intro intro--index">
           <h1 class="visually-hidden">Сайт туристического города Седона</h1>
-          <p class="intro__heading">седона — небольшой городок в аризоне, заслуживающий большего!</p>
-          <p class="intro__description">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+          <p class="intro__heading intro__heading--index">седона — небольшой городок в аризоне, заслуживающий большего!
+          </p>
+          <p class="intro__description intro__description--index">рассмотрим 5 причин, по которым седона круче, чем
+            гранд
+            каньон!</p>
         </section>
       </section>
 
@@ -57,15 +69,23 @@
         <h2 class="visually-hidden">преимущества Седоны</h2>
         <ul class="features__list">
           <li class="features__item features__item--photo features__item-1">
-            <img class="features__triangle-img" src="img/icons/feature-triangle.svg" width="768" height="37" alt="">
+            <svg class="features__triangle-img" preserveAspectRatio='none' width="320" height="37" viewBox="0 0 320 37"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M543 0H159V37L543 0Z" fill="white" />
+            </svg>
             <div class="features__item-wrap">
               <div class="features__wrap">
                 <h3 class="features__header">настоящий городок</h3>
                 <span class="features__number">— №1 —</span>
                 <p class="features__text">седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="features__photo" src="img/mobile-img/city.jpg" width="320" height="260"
-                alt="улица города Седона">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/desktop-img/city.jpg">
+                <source media="(min-width: 768px)" srcset="img/tablet-img/city.jpg">
+                <img class="features__photo" src="img/mobile-img/city.jpg" width="320" height="260"
+                  alt="улица города Седона">
+              </picture>
             </div>
           </li>
           <li class="features__item features__item-sub">
@@ -73,22 +93,25 @@
               <li class="features__subitem">
                 <img class="features__promo-photo" src="img/icons/icon-house.svg" width="40" height="40"
                   alt="иконка-дом">
-                <h3 class="features__header">жилье</h3>
-                <p class="features__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <h3 class="features__subitem-header">жилье</h3>
+                <p class="features__subitem-text features__subitem-text--housing">рекомендуем пожить в настоящем мотеле,
+                  все как в кино!</p>
               </li>
 
               <li class="features__subitem">
                 <img class="features__promo-photo" src="img/icons/icon-burger.svg" width="40" height="40"
                   alt="иконка-бургер">
-                <h3 class="features__header">еда</h3>
-                <p class="features__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <h3 class="features__subitem-header">еда</h3>
+                <p class="features__subitem-text features__subitem-text--food">всегда заказывайте фирменный бургер, вы
+                  не разочаруетесь!</p>
               </li>
 
               <li class="features__subitem">
                 <img class="features__promo-photo" src="img/icons/icon-gift.svg" width="40" height="40"
                   alt="иконка-сувенир">
-                <h3 class="features__header">сувениры</h3>
-                <p class="features__text">не только китайского, но и местного производства!</p>
+                <h3 class="features__subitem-header">сувениры</h3>
+                <p class="features__subitem-text features__subitem-text--souvenirs">не только китайского, но и местного
+                  производства!</p>
               </li>
             </ul>
           </li>
@@ -104,34 +127,38 @@
             </div>
           </li>
 
-          <li class="features__item features__item-3">
-            <h3 class="features__header">небольшая площадь</h3>
-            <span class="features__number">— №3 —</span>
-            <p class="features__text">все интересные места находятся очень близко</p>
+          <li class="features__item features__item-3 features__item--gray">
+            <div class="features__item--gray-wrap features__item--gray-line">
+              <h3 class="features__header features__header--gray features__header--square">небольшая площадь</h3>
+              <span class="features__number">— №3 —</span>
+              <p class="features__text features__text--square">все интересные места находятся очень близко</p>
+            </div>
           </li>
 
-          <li class="features__item features__item-4">
-            <h3 class="features__header">красивая дорога</h3>
-            <span class="features__number">— №4 —</span>
-            <p class="features__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+          <li class="features__item features__item-4 features__item--gray">
+            <div class="features__item--gray-wrap features__item--gray-line">
+              <h3 class="features__header features__header--gray features__header--road">красивая дорога</h3>
+              <span class="features__number">— №4 —</span>
+              <p class="features__text features__text--road">ехать в седону из лас-вегаса совсем не скучно!</p>
+            </div>
           </li>
 
-          <li class="features__item features__item-5">
-            <h3 class="features__header">мало туристов</h3>
-            <span class="features__number">— №5 —</span>
-            <p class="features__text">большинство едет в гранд каньон и толпится там</p>
+          <li class="features__item features__item-5 features__item--gray">
+            <div class="features__item--gray-wrap">
+              <h3 class="features__header features__header--gray features__header--tourists">мало туристов</h3>
+              <span class="features__number">— №5 —</span>
+              <p class="features__text features__text--tourists">большинство едет в гранд каньон и толпится там</p>
+            </div>
           </li>
         </ul>
       </section>
       <section class="booking">
         <h2 class="visually-hidden">бронирование гостиницы</h2>
-        <div class="booking__wrap">
-          <p class="booking__header">заинтересовались?</p>
-          <p class="booking__info">укажите предполагаемые даты поездки, и мы покажем вам
-            лучшие предложения гостиниц в седоне
-          </p>
-          <a class="button booking__button" href="#">найти гостиницу</a>
-        </div>
+        <p class="booking__header">заинтересовались?</p>
+        <p class="booking__info">укажите предполагаемые даты поездки, и мы покажем вам
+          лучшие предложения гостиниц в седоне
+        </p>
+        <a class="button booking__button" href="#">найти гостиницу</a>
       </section>
 
       <section class="map">

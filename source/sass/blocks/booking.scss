@@ -6,10 +6,6 @@
   padding: 0 18px;
 }
 
-.booking__wrap {
-  padding: 38px 0 49px 0;
-}
-
 .booking__header {
   font-weight: 700;
   font-size: 21px;
@@ -17,39 +13,46 @@
   color: $black;
   padding: 0 5px;
   margin: 0 0 26px 0;
+  text-align: center;
 }
 
 .booking__info {
-  margin: 0 auto 32px;
+  margin: 0 auto 32px auto;
   max-width: 261px;
+  text-align: center;
 }
 
 .booking__button {
   display: block;
   text-decoration: none;
   padding: 16px 49px;
+  margin: 0 0 49px 0;
 }
 
 @media (min-width: $tablet-width) {
-  .booking__wrap {
+  .booking {
     max-width: 435px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .booking__header {
     font-size: 30px;
   }
 
-  .booking__wrap {
-    padding: 61px 0 66px 0;
-  }
-
   .booking__button {
     padding: 16px 121px;
+    margin: 0 0 58px 0;
   }
 
   .booking__info {
     margin: 0 auto 40px;
     max-width: 435px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .booking__button {
+    margin: 0 0 66px 0;
   }
 }
