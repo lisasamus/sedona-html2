@@ -4,7 +4,7 @@
 
 .features__list {
   list-style: none;
-  margin: 0;
+  margin: 0 0 38px 0;
   padding: 0;
 }
 
@@ -15,7 +15,7 @@
 
 .features__wrap {
   margin: 0 auto;
-  padding: 39px 0 35px 0;
+  padding: 39px 0 39px 0;
   align-self: center;
 }
 
@@ -34,24 +34,33 @@
   padding: 0;
 }
 
+.features__subitem-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  padding: 0;
+  align-self: center;
+  text-align: left;
+  margin: 0;
+}
+
 .features__number {
   display: block;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
 }
 
 .features__item {
   text-align: center;
-  color: $main-font;
+}
+
+.features__item--gray {
   background-color: $main-background;
 }
 
 .features__item:first-child {
   position: relative;
   overflow: hidden;
-
-  .features__wrap {
-    padding: 54px 0 40px;
-  }
 }
 
 .features__triangle-img {
@@ -77,16 +86,10 @@
 }
 
 .features__sublist {
-  display: grid;
-  justify-content: center;
   list-style: none;
   padding: 25px 0 52px 0;
   background-color: $white;
   color: $main-font;
-}
-
-.features__subitem .features__header {
-  color: $black;
 }
 
 .features__subitem {
@@ -100,38 +103,39 @@
   &:last-child {
     margin: 0;
   }
-
-  .features__header {
-    align-self: center;
-    text-align: left;
-    margin: 0;
-  }
-
-  .features__text {
-    grid-column: 2;
-    text-align: left;
-    margin: 0;
-    max-width: 225px;
-  }
 }
 
-.features__item:nth-child(n+4) {
+.features__subitem-text {
+  grid-column: 2;
+  text-align: left;
+  margin: 0;
+}
+
+.features__item--gray-wrap {
   padding: 24px 0 24px 0;
+  margin: 0 18px 0 18px;
+}
+
+.features__item--gray-line {
   border-bottom: solid 1px $feature-border;
 }
 
-.features__item:last-child {
-  border: unset;
-}
-
 @media (min-width: $tablet-width) {
+  .features__list {
+    margin: 0 0 61px 0;
+  }
+
+  .features__header {
+    font-size: 21px;
+  }
+
   .features__item:first-child {
     .features__wrap {
       padding: 0 32px 0 32px;
     }
   }
 
-  .features__item:nth-child(n+4) {
+  .features__item--gray-line {
     border-bottom: unset;
   }
 
@@ -184,24 +188,40 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    align-items: baseline;
   }
 
   .features__subitem {
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding: 60px 36px;
+    padding: 10px 36px;
     margin: 0;
+    min-height: 330px;
+    justify-content: center;
+  }
 
-    .features__header {
-      text-align: center;
-      margin: 0 0 29px 0;
-    }
+  .features__subitem-header {
+    text-align: center;
+    margin: 0 0 29px 0;
+    font-size: 21px;
+  }
 
-    .features__text {
-      text-align: center;
-      margin: 0 auto;
-    }
+  .features__subitem-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .features__subitem-text--housing {
+    max-width: 185px;
+  }
+
+  .features__subitem-text--food {
+    max-width: 180px;
+  }
+
+  .features__subitem-text--souvenirs {
+    max-width: 193px;
   }
 
   .features__promo-photo {
@@ -237,35 +257,74 @@
     }
   }
 
-  .features__item:nth-child(n+4) {
-    padding: 41px 0 41px 0;
+  .features__item--gray-wrap {
+    padding: 41px 0 10px 0;
+    min-height: 256px;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .features__header {
-      padding: 0 60px 0 60px;
-      margin: 0 0 13px 0;
-    }
+  .features__number {
+    margin: 0 0 26px 0;
+  }
 
-    .features__text {
-      padding: 0 35px 0 35px;
-    }
+  .features__header--gray {
+    width: 100%;
+    align-self: center;
+    max-width: 159px;
+  }
 
-    .features__number {
-      margin: 0 0 26px 0;
-    }
+  .features__header--square {
+    max-width: 125px;
+  }
+
+  .features__text--square {
+    max-width: 189px;
+    align-self: center;
+  }
+
+  .features__header--road {
+    max-width: 106px;
+  }
+
+  .features__text--road {
+    max-width: 145px;
+    align-self: center;
+  }
+
+  .features__header--tourists {
+    max-width: 106px;
+  }
+
+  .features__text--tourists {
+    max-width: 175px;
+    align-self: center;
   }
 }
 
 @media (min-width: $desktop-width) {
 
-  .features__sublist {
-    justify-content: space-around;
+  .features__subitem-text--housing {
+    max-width: 282px;
   }
 
-  .features__subitem {
-    padding: 60px 0;
+  .features__subitem-text--food {
+    max-width: 313px;
+  }
 
-    &:last-child {
-      padding: 60px;
-    }
+  .features__subitem-text--souvenirs {
+    max-width: 244px;
+  }
+
+  .features__text--square {
+    max-width: 315px;
+  }
+
+  .features__text--road {
+    max-width: 275px;
+  }
+
+  .features__text--tourists {
+    max-width: 290px;
   }
 }

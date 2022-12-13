@@ -58,7 +58,7 @@
 
 @media (min-width: $tablet-width) {
   .gallery {
-    margin: 0 60px;
+    margin: 0 60px 64px 60px;
   }
 
   .gallery__list {
@@ -75,7 +75,6 @@
   .gallery__item:first-child {
     grid-column: 1/-1;
     border-top: unset;
-    margin: 63px 0 0 0;
   }
 
   .gallery__link {
@@ -112,7 +111,7 @@
 
 @media (min-width: $desktop-width) {
   .gallery {
-    margin: 0;
+    margin: 0 0 66px 0;
     max-width: 1200px;
   }
 
@@ -123,10 +122,9 @@
 
   .gallery__item:first-child {
     grid-column: 1/-1;
-    margin: 43px 0 0 0;
 
     .gallery__image {
-      height: 400px;
+      min-height: 400px;
     }
   }
 

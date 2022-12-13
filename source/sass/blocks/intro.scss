@@ -2,15 +2,11 @@
   text-transform: uppercase;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.intro--index {
-  padding: 0 55px;
+  text-align: center;
 }
 
 .intro__heading {
   text-align: center;
-  margin: 0 0 35px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -21,23 +17,73 @@
   text-align: center;
   margin: 0;
   color: $main-font;
+}
+
+.intro__heading--index {
+  max-width: 272px;
+  margin: 0 auto 35px auto;
+}
+
+.intro__description--index {
+  min-width: 272px;
   margin: 0 0 35px 0;
 }
 
+.intro__heading--catalog {
+  margin: 0 auto 25px auto;
+}
+
+.intro__description--catalog {
+  max-width: 270px;
+  margin: 0 auto 25px auto;
+}
+
+.intro__description--form {
+  margin: 0 auto 28px auto;
+  max-width: 280px;
+}
+
+.intro__heading--form {
+  margin: 0 auto 24px auto;
+}
+
+.intro--presentation {
+  margin: 0 auto 38px auto;
+}
+
+.intro__heading--presentation {
+  margin: 0 auto 30px auto;
+}
+
+.intro__description--presentation {
+  padding: 0 10px;
+}
+
 @media (min-width: $tablet-width) {
-  .intro {
-    max-width: 520px;
+  .intro--catalog {
+    margin: 0 auto 63px auto;
   }
 
-  .intro__heading--large {
+  .intro__heading--catalog {
     font-size: 30px;
   }
 
-  .intro__description {
-    margin: 0 0 55px 0;
+  .intro__heading--index {
+    max-width: 520px;
+    margin: 0 auto 30px auto;
+    font-size: 21px;
   }
 
-  .intro__description--hero {
+  .intro__heading--form {
+    font-size: 30px;
+    margin: 0 auto 20px auto;
+  }
+
+  .intro__description--index {
+    margin: 0 auto 55px auto;
+  }
+
+  .intro__description--catalog {
     max-width: 430px;
     margin: 0 auto;
   }
@@ -45,16 +91,36 @@
   .intro__description--presentation {
     max-width: 443px;
     margin: 0 auto;
+    padding: 0;
+  }
+
+  .intro__heading--presentation {
+    font-size: 30px;
+    padding: 0;
+    margin: 0 auto 28px auto;
+  }
+
+  .intro__description--form {
+    max-width: 445px;
+    margin: 0 auto 102px auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .intro {
-    max-width: 436px;
-    padding: 0;
+  .intro__description--index {
+    margin: 0 auto 44px auto;
   }
 
-  .intro__description {
-    margin: 0 0 44px 0;
+  .intro__description--form {
+    margin: 0 auto 66px auto;
   }
+
+  .intro__heading--form {
+    margin: 0 auto 25px auto;
+  }
+
+  .intro--presentation {
+    margin: 0 auto 89px auto;
+  }
+
 }

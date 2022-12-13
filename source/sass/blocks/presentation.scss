@@ -5,14 +5,14 @@
 @media (min-width: $tablet-width) {
   .presentation {
     max-width: 648px;
-    margin: 0 auto;
-    padding: 62px 0 40px 0;
+    margin: 0 auto 40px auto;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .presentation {
     max-width: 800px;
-    padding: 62px 0 90px 0;
+    margin: 0 auto 90px auto;
   }
 }
