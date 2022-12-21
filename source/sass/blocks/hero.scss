@@ -2,6 +2,11 @@
   background-color: $white;
 }
 
+.hero__picture {
+  display: flex;
+  width: 100%;
+}
+
 .hero__about {
   max-width: 272px;
   margin: 0 auto;

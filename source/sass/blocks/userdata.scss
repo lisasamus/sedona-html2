@@ -29,6 +29,10 @@
   height: 58px;
 }
 
+.userdata__input:hover {
+  background-color: $disabled;
+}
+
 .userdata__wrap {
   display: flex;
   align-items: center;
@@ -48,13 +52,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: black;
-  padding: 0 0 0 16px;
-}
-
-.userdata__input--phone::placeholder,
-.userdata__input--email::placeholder {
   color: $placeholder-font;
+  padding: 0 0 0 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,7 +66,7 @@
   .userdata {
     min-width: 324px;
     margin: 0 0 48px 0;
-    padding: 0;
+    padding: 0 43px 0 0;
   }
 
   .userdata__list {
@@ -85,25 +84,24 @@
   }
 
   .userdata__item {
-    min-width: 280px;
+    width: 100%;
   }
 
   .userdata-contacts {
     border-left: solid 1px $disabled;
+    padding: 0 0 0 43px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .userdata {
-    max-width: 960px;
-  }
-
-  .userdata {
+    min-width: 493px;
     padding: 0px 63px 0 0px;
     margin: 0 0 56px 0;
   }
 
   .userdata-contacts {
+    min-width: 466px;
     padding: 0px 0px 0 63px;
   }
 }

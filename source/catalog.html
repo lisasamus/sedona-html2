@@ -42,8 +42,14 @@
     <main>
       <section class="hero">
         <div class="hero__wrapper">
-          <img class="hero__background-img hero__background-img--short" src="img/mobile-img/hero.jpg" width="320"
-            height="157" alt="горы в Седоне">
+          <picture class="hero__picture">
+            <source media="(min-width: 1200px)"
+              srcset="img/desktop-img/hero-form.jpg 1x, img/desktop-img/hero-form@x2.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/tablet-img/hero-form.jpg 1x, img/tablet-img/hero-form@x2.jpg 2x">
+            <img class="hero__background-img hero__background-img--short" src="img/mobile-img/hero-form.jpg"
+              srcset="img/mobile-img/hero-form@x2.jpg 2x" width="320" height="157" alt="горы в Седоне">
+          </picture>
           <img class="hero__text-img hero__text-img--short" src="img/icons/sedona.svg" width="229" height="39"
             alt="sedona">
           <svg class="hero__triangle-img" preserveAspectRatio='none' width="1200" height="57" viewBox="0 0 1200 57"
@@ -64,7 +70,13 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/mobile-img/road.jpg" width="280" height="280" alt="дорога в Седону">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/desktop-img/road.jpg 1x, img/desktop-img/road@x2.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/tablet-img/road.jpg 1x, img/tablet-img/road@x2.jpg 2x">
+                <img class="gallery__image" src="img/mobile-img/road.jpg" srcset="img/mobile-img/road@x2.jpg 2x"
+                  width="280" height="280" alt="дорога в Седону">
+              </picture>
             </a>
             <div class="gallery__description">
               <div class="gallery__wrap">
@@ -85,8 +97,13 @@
 
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/mobile-img/flora.jpg" width="280" height="280"
-                alt="местное цветущее растение">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/desktop-img/flora.jpg 1x, img/desktop-img/flora@x2.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/tablet-img/flora.jpg 1x, img/tablet-img/flora@x2.jpg 2x">
+                <img class="gallery__image" src="img/mobile-img/flora.jpg" srcset="img/mobile-img/flora@x2.jpg 2x"
+                  width="280" height="280" alt="местное цветущее растение">
+              </picture>
             </a>
             <div class="gallery__description">
               <div class="gallery__wrap">
@@ -108,7 +125,14 @@
 
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/mobile-img/forest.jpg" width="280" height="280" alt="дорога в горах">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/desktop-img/forest.jpg 1x, img/desktop-img/forest@x2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/tablet-img/forest.jpg 1x, img/tablet-img/forest@x2.jpg 2x">
+                <img class="gallery__image" src="img/mobile-img/forest.jpg" srcset="img/mobile-img/forest@x2.jpg 2x"
+                  width="280" height="280" alt="дорога в горах">
+              </picture>
             </a>
             <div class="gallery__description">
               <div class="gallery__wrap">
@@ -129,7 +153,14 @@
 
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="img/mobile-img/bridge.jpg" width="280" height="280" alt="мост из скалы">
+              <picture class="gallery__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/desktop-img/bridge-catalog.jpg 1x, img/desktop-img/bridge-catalog@x2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/tablet-img/bridge-catalog.jpg 1x, img/tablet-img/bridge-catalog@x2.jpg 2x">
+                <img class="gallery__image" src="img/mobile-img/bridge-catalog.jpg"
+                  srcset="img/mobile-img/bridge-catalog@x2.jpg 2x" width="280" height="280" alt="мост из скалы">
+              </picture>
             </a>
             <div class="gallery__description">
               <div class="gallery__wrap">
@@ -159,8 +190,13 @@
         </div>
         <div class="video">
           <div class="video__wrap">
-            <img class="video__img" src="img/mobile-img/video-mobile.jpg" alt="видеопрезентация Седоны" width="280"
-              height="177">
+            <picture class="video__picture">
+              <source media="(min-width: 1200px)"
+                srcset="img/desktop-img/video.jpg 1x, img/desktop-img/video@x2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/tablet-img/video.jpg 1x, img/tablet-img/video@x2.jpg 2x">
+              <img class="video__img" src="img/mobile-img/video-mobile.jpg"
+                srcset="img/mobile-img/video-mobile@x2.jpg 2x" alt="видеопрезентация Седоны" width="280" height="177">
+            </picture>
             <img class="video__icon" src="img/icons/icon-video.svg" alt="включить видео" width="48" height="54">
           </div>
         </div>

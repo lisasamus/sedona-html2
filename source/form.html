@@ -42,8 +42,12 @@
     <main>
       <section class="hero">
         <div class="hero__wrapper">
-          <img class="hero__background-img hero__background-img--short" src="img/mobile-img/hero.jpg" width="320"
-            height="157" alt="горы в Седоне">
+          <picture class="hero__picture">
+            <source media="(min-width: 1200px)" srcset="img/desktop-img/hero-form.jpg">
+            <source media="(min-width: 768px)" srcset="img/tablet-img/hero-form.jpg">
+            <img class="hero__background-img hero__background-img--short" src="img/mobile-img/hero-form.jpg" width="320"
+              height="157" alt="горы в Седоне">
+          </picture>
           <img class="hero__text-img hero__text-img--short" src="img/icons/sedona.svg" width="229" height="39"
             alt="sedona">
           <svg class="hero__triangle-img" preserveAspectRatio='none' width="1200" height="57" viewBox="0 0 1200 57"
@@ -113,7 +117,7 @@
         </fieldset>
 
         <fieldset class="review__block filter">
-          <h2 class="review__heading review__heading--line">ваше общее впечатление</h2>
+          <h2 class="review__heading review__heading--line review__heading--line-radio">ваше общее впечатление</h2>
           <ul class="filter__list filter__list--radio">
             <li class="filter__item filter__item--radio">
               <input class="filter__input visually-hidden" type="radio" name="assessment" id="assessment-positive"
@@ -132,7 +136,8 @@
         </fieldset>
 
         <fieldset class="review__block filter">
-          <h2 class="review__heading review__heading--line">посещенные<br> достопримечательности:</h2>
+          <h2 class="review__heading review__heading--line review__heading--line-checkbox">посещенные<br>
+            достопримечательности:</h2>
           <ul class="filter__list filter__list--checkbox">
             <li class="filter__item filter__item--checkbox">
               <input class="filter__input visually-hidden" type="checkbox" name="bridge" id="devils-bridge" checked>
@@ -152,14 +157,14 @@
 
             <li class="filter__item filter__item--checkbox">
               <input class="filter__input visually-hidden" type="checkbox" name="rock" id="red-rock">
-              <label class="filter__label" for="red-rock">Слайд-парк</label>
+              <label class="filter__label" for="red-rock">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
 
-        <div class="review__block feedback">
+        <div class="review__block feedback review__heading--line review__heading--line-feedback">
           <div class="feedback__wrap">
-            <label class="review__heading review__heading--line" for="emotions-review">опишите свои эмоции:</label>
+            <label class="review__heading" for="emotions-review">опишите свои эмоции:</label>
             <div class="feedback__review-wrap">
               <textarea class="feedback__review" name="feedback-text" id="emotions-review"
                 placeholder=" Опишите подробно все свои восторги"></textarea>

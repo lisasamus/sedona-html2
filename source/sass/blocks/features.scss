@@ -2,6 +2,11 @@
   text-transform: uppercase;
 }
 
+.features__picture {
+  display: flex;
+  width: 100%;
+}
+
 .features__list {
   list-style: none;
   margin: 0 0 38px 0;
@@ -21,7 +26,7 @@
 
 .features__photo {
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -131,7 +136,7 @@
 
   .features__item:first-child {
     .features__wrap {
-      padding: 0 32px 0 32px;
+      padding: 10px 32px 10px 32px;
     }
   }
 
@@ -238,17 +243,17 @@
 
   .features__wrap {
     margin: 0 auto;
-    padding: 0 32px 0 32px;
+    padding: 10px 32px 10px 32px;
     grid-column: 1/1;
   }
 
-  .features__photo {
-    height: 256px;
+  .features__picture {
+    height: 100%;
     grid-column: 2/4;
   }
 
   .features__item-2 {
-    .features__photo {
+    .features__picture {
       grid-column: 1/3;
     }
 

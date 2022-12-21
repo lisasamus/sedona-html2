@@ -41,9 +41,16 @@
     <main>
       <section class="hero">
         <div class="hero__wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/desktop-img/hero.jpg">
-            <source media="(min-width: 768px)" srcset="img/tablet-img/hero.jpg">
+          <picture class="hero__picture">
+
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/desktop-img/hero.webp 1x, img/desktop-img/hero@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/desktop-img/hero.jpg 1x, img/desktop-img/hero@x2.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/tablet-img/hero.jpg 1x, img/tablet-img/hero@x2.jpg 2x">
             <img class="hero__background-img" src="img/mobile-img/hero.jpg" srcset="img/mobile-img/hero@x2.jpg 2x"
               width="320" height="389" alt="горы в Седоне">
           </picture>
@@ -80,11 +87,12 @@
                 <span class="features__number">— №1 —</span>
                 <p class="features__text">седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/desktop-img/city.jpg">
-                <source media="(min-width: 768px)" srcset="img/tablet-img/city.jpg">
+              <picture class="features__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/desktop-img/city.jpg 1x, img/desktop-img/city@x2.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/tablet-img/city.jpg 1x, img/tablet-img/city@x2.jpg 2x">
                 <img class="features__photo" src="img/mobile-img/city.jpg" width="320" height="260"
-                  alt="улица города Седона">
+                  srcset="img/mobile-img/city@x2.jpg 2x" alt="улица города Седона">
               </picture>
             </div>
           </li>
@@ -118,7 +126,14 @@
 
           <li class="features__item features__item--photo features__item-2">
             <div class="features__item-wrap">
-              <img class="features__photo" src="img/mobile-img/bridge.jpg" width="320" height="260" alt="мост дьявола">
+              <picture class="features__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/desktop-img/bridge.jpg 1x, img/desktop-img/bridge@x2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/tablet-img/bridge.jpg 1x, img/tablet-img/bridge@x2.jpg 2x">
+                <img class="features__photo" src="img/mobile-img/bridge.jpg" srcset="img/tablet-img/bridge@x2.jpg 2x"
+                  width="320" height="260" alt="мост дьявола">
+              </picture>
               <div class="features__wrap">
                 <h3 class="features__header">там есть мост дьявола</h3>
                 <span class="features__number">— №2 —</span>
@@ -163,7 +178,12 @@
 
       <section class="map">
         <h2 class="visually-hidden">карта</h2>
-        <img class="map__img" src="img/mobile-img/map.png" alt="карта" width="320" height="350">
+        <picture class="map__picture">
+          <source media="(min-width: 1200px)" srcset="img/desktop-img/map.png 1x, img/desktop-img/map@x2.png 2x">
+          <source media="(min-width: 768px)" srcset="img/tablet-img/map.png 1x, img/tablet-img/map@x2.png 2x">
+          <img class="map__img" src="img/mobile-img/map.png" srcset="img/mobile-img/map@x2.png 2x" alt="карта"
+            width="320" height="350">
+        </picture>
       </section>
 
     </main>

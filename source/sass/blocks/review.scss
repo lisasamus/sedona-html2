@@ -43,6 +43,7 @@
   .review__heading {
     border-top: unset;
     margin: 0 0 28px 0;
+    padding: 0;
     display: block;
     font-size: 21px;
   }
@@ -64,8 +65,48 @@
     padding: 18px 60px 13px 50px;
   }
 
+  .review__heading--line-radio,
+  .review__heading--line-checkbox {
+    margin: 0 60px 28px 60px;
+  }
+
   .review__heading--line {
     position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $review-line;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $review-line;
+    }
+  }
+
+  .review__heading--line-radio::after,
+  .review__heading--line-radio::before {
+    top: 14px;
+  }
+
+  .review__heading--line-checkbox::after,
+  .review__heading--line-checkbox::before {
+    top: 24px;
+  }
+
+  .review__heading--line-feedback::after,
+  .review__heading--line-feedback::before {
+    top: 14px;
   }
 }
 
@@ -88,5 +129,15 @@
 
   .review__button-wrapper {
     margin: 0 0 64px 0;
+  }
+
+  .review__heading--line::before,
+  .review__heading--line::after {
+    width: 280px;
+  }
+
+  .review__heading--line-radio,
+  .review__heading--line-checkbox {
+    margin: 0 0 28px 0px;
   }
 }

@@ -26,6 +26,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .feedback {
+    margin: 0 60px 0 60px;
+  }
+
   .feedback__wrap {
     max-width: 648px;
     margin: 0 auto 48px auto;
@@ -38,6 +42,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .feedback {
+    margin: 0;
+  }
+
   .feedback__wrap {
     max-width: 768px;
   }
