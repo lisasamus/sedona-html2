@@ -44,7 +44,7 @@
 .hero__wrapper {
   position: relative;
   overflow: hidden;
-  margin: 0 0 35px 0;
+  margin: 0 0 33px 0;
   display: flex;
 }
 
@@ -87,7 +87,7 @@
     margin: 0 0 65px 0;
   }
 
-  .hero__wrapper-form {
+  .hero__wrapper--form {
     margin: 0 0 63px 0;
   }
 
@@ -98,7 +98,7 @@
   .hero__text-img {
     width: 461px;
     height: 350px;
-    top: 134px;
+    top: 75px;
   }
 
   .hero__background-img--short {
@@ -108,11 +108,16 @@
   .hero__text-img--short {
     min-width: 457px;
     min-height: 78px;
+    top: 133px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .hero__wrapper-form {
+  .hero__wrapper {
+    margin: 0 0 60px 0;
+  }
+
+  .hero__wrapper--form {
     margin: 0 0 112px 0;
   }
 
@@ -123,7 +128,7 @@
   .hero__text-img {
     width: 459px;
     height: 349px;
-    top: 140px;
+    top: 79px;
   }
 
   .hero__background-img--short {
@@ -133,6 +138,7 @@
   .hero__text-img--short {
     min-width: 459px;
     min-height: 80px;
+    top: 141px;
   }
 
 }

@@ -35,7 +35,7 @@
 
 .features__wrap {
   margin: 0 auto;
-  padding: 51px 0 39px 0;
+  padding: 52px 0 39px 0;
   align-self: center;
 }
 
@@ -54,7 +54,7 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   padding: 0;
 }
 
@@ -71,7 +71,7 @@
 
 .features__number {
   display: block;
-  margin: 0 0 15px 0;
+  margin: 0 0 16px 0;
 }
 
 .features__number--gray {
@@ -100,8 +100,12 @@
 }
 
 .features__text {
-  margin: 0 5px;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.features__text--town {
+  max-width: 275px;
 }
 
 .features__item--photo {
@@ -115,7 +119,7 @@
 
 .features__sublist {
   list-style: none;
-  padding: 25px 0 52px 0;
+  padding: 25px 0 50px 0;
   background-color: $white;
   color: $main-font;
 }
@@ -126,7 +130,7 @@
   display: grid;
   grid-template-columns: 40px 1fr;
   grid-template-rows: 40px 1fr;
-  column-gap: 8px;
+  column-gap: 7px;
   row-gap: 10px;
 
   &:last-child {
@@ -141,8 +145,44 @@
 }
 
 .features__item--gray-wrap {
-  padding: 24px 0 24px 0;
+  padding: 25px 0 22px 0;
   margin: 0 18px 0 18px;
+}
+
+.features__number--square {
+  margin: 0 0 17px 0;
+}
+
+.features__text--square {
+  max-width: 260px;
+}
+
+.features__item--road {
+  padding: 25px 0 25px 0;
+}
+
+.features__header--road {
+  margin: 0 0 11px 0;
+}
+
+.features__number--road {
+  margin: 0 0 17px 0;
+}
+
+.features__text--road {
+  max-width: 260px;
+}
+
+.features__item--tourists {
+  padding: 25px 0 25px 0;
+}
+
+.features__number--tourists {
+  margin: 0 0 17px 0;
+}
+
+.features__text--tourists {
+  max-width: 260px;
 }
 
 .features__item--gray-line {
@@ -157,11 +197,6 @@
   .features__header {
     font-size: 21px;
   }
-
-  .features__wrap--town {
-    padding: 10px 32px 10px 32px;
-  }
-
 
   .features__item--gray-line {
     border-bottom: unset;
@@ -231,7 +266,7 @@
 
   .features__subitem-header {
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     font-size: 21px;
   }
 
@@ -266,7 +301,7 @@
 
   .features__wrap {
     margin: 0 auto;
-    padding: 10px 32px 10px 32px;
+    padding: 10px;
     grid-column: 1/1;
   }
 
@@ -292,11 +327,36 @@
     }
   }
 
-  .features__header--devil {
-    max-width: 150px;
-    margin: 0 auto 10px auto;
+  .features__number {
+    margin: 0 0 26px 0;
   }
 
+  .features__header--devil {
+    max-width: 150px;
+    margin: 0 auto 12px auto;
+  }
+
+  .features__text--devil {
+    max-width: 180px;
+  }
+
+  .features__number--devil {
+    margin: 0 0 22px 0;
+  }
+
+  .features__text--town {
+    max-width: 235px;
+    margin: 0 0 4px 0;
+  }
+
+  .features__header--town {
+    max-width: 150px;
+    margin: 0 auto 15px auto;
+  }
+
+  .features__number--town {
+    margin: 0 0 24px 0;
+  }
 
   .features__item--gray-wrap {
     padding: 41px 0 10px 0;
@@ -305,14 +365,11 @@
     flex-direction: column;
   }
 
-  .features__number {
-    margin: 0 0 26px 0;
-  }
-
   .features__header--gray {
     width: 100%;
     align-self: center;
     max-width: 159px;
+    margin: 0 0 15px 0;
   }
 
   .features__header--square {
@@ -341,25 +398,33 @@
     max-width: 175px;
     align-self: center;
   }
+
+  .features__number--gray {
+    margin: 0 0 21px 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .features__text {
+    font-size: 11px;
+  }
+
   .features__wrap--town {
-    padding: 10px 50px;
-    margin: 0 0 15px 0;
+    margin: 0 auto 15px auto;
+    padding: 17px 10px 10px 10px;
+  }
+
+  .features__text--town {
+    max-width: 285px;
+    margin: 0;
   }
 
   .features__header--town {
-    padding: 0 55px;
-    margin: 0 0 15px 0;
+    margin: 0 auto 15px auto;
   }
 
   .features__number--town {
-    margin: 0 0 20px 0;
-  }
-
-  .features__text {
-    font-size: 12px;
+    margin: 0 0 23px 0;
   }
 
   .features__header--devil {
@@ -382,7 +447,7 @@
     margin: 0 0 28px 0;
   }
 
-  .features__subitem--header {
+  .features__subitem-header {
     margin: 0 0 25px 0;
   }
 
@@ -411,5 +476,17 @@
   .features__text--tourists {
     font-size: 14px;
     max-width: 290px;
+  }
+
+  .features__header--square {
+    margin: 0 0 14px 0;
+  }
+
+  .features__header--tourists {
+    margin: 0 0 14px 0;
+  }
+
+  .features__header--road {
+    margin: 0 0 14px 0;
   }
 }

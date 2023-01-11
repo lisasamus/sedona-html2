@@ -26,11 +26,13 @@
   text-transform: uppercase;
   color: $mark-font;
   margin: auto 0;
+  font-size: 12px;
 }
 
 .review__button {
   margin: 0;
   padding: 18.5px 0 13.5px 0;
+  font-size: 18px;
 }
 
 .review__button-wrap {
@@ -96,17 +98,17 @@
 
   .review__heading--line-radio::after,
   .review__heading--line-radio::before {
-    top: 14px;
+    top: 12px;
   }
 
   .review__heading--line-checkbox::after,
   .review__heading--line-checkbox::before {
-    top: 24px;
+    top: 26px;
   }
 
   .review__heading--line-feedback::after,
   .review__heading--line-feedback::before {
-    top: 14px;
+    top: 13px;
   }
 
   .review__heading--userdata {

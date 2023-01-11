@@ -113,8 +113,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro__heading--index {
+    margin: 0 auto 27px auto;
+  }
+
   .intro__description--index {
     margin: 0 auto 44px auto;
+    font-size: 14px;
   }
 
   .intro__description--form {
