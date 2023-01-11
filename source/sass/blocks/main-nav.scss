@@ -193,7 +193,8 @@
     }
   }
 
-  .main-nav__link--current {
+  .main-nav__link--current,
+  .main-nav__link--current:hover {
     color: $current-link;
   }
 

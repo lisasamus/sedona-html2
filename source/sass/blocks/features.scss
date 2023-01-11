@@ -18,10 +18,29 @@
   flex-direction: column;
 }
 
+.features__item-2 {
+  .features__item-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features__picture {
+    order: 2;
+  }
+
+  .features__wrap--devil {
+    order: 1;
+  }
+}
+
 .features__wrap {
   margin: 0 auto;
-  padding: 39px 0 39px 0;
+  padding: 51px 0 39px 0;
   align-self: center;
+}
+
+.features__wrap--devil {
+  padding: 40px 0 36px 0;
 }
 
 .features__photo {
@@ -53,6 +72,10 @@
 .features__number {
   display: block;
   margin: 0 0 15px 0;
+}
+
+.features__number--gray {
+  margin: 0 0 19px 0;
 }
 
 .features__item {
@@ -103,7 +126,8 @@
   display: grid;
   grid-template-columns: 40px 1fr;
   grid-template-rows: 40px 1fr;
-  gap: 7px;
+  column-gap: 8px;
+  row-gap: 10px;
 
   &:last-child {
     margin: 0;
@@ -134,11 +158,10 @@
     font-size: 21px;
   }
 
-  .features__item:first-child {
-    .features__wrap {
-      padding: 10px 32px 10px 32px;
-    }
+  .features__wrap--town {
+    padding: 10px 32px 10px 32px;
   }
+
 
   .features__item--gray-line {
     border-bottom: unset;
@@ -208,7 +231,7 @@
 
   .features__subitem-header {
     text-align: center;
-    margin: 0 0 29px 0;
+    margin: 0 0 20px 0;
     font-size: 21px;
   }
 
@@ -233,7 +256,7 @@
     align-self: center;
     width: 75px;
     height: 72px;
-    margin: 0 0 26px 0;
+    margin: 0 0 16px 0;
   }
 
   .features__item-wrap {
@@ -252,15 +275,28 @@
     grid-column: 2/4;
   }
 
-  .features__item-2 {
-    .features__picture {
-      grid-column: 1/3;
+
+  .features__item--devil {
+    .features__item-wrap--devil {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .features__wrap {
+    .features__wrap--devil {
       grid-column: 3/4;
     }
+
+    .features__picture--devil {
+      grid-column: 1/3;
+      order: unset;
+    }
   }
+
+  .features__header--devil {
+    max-width: 150px;
+    margin: 0 auto 10px auto;
+  }
+
 
   .features__item--gray-wrap {
     padding: 41px 0 10px 0;
@@ -308,28 +344,72 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features__wrap--town {
+    padding: 10px 50px;
+    margin: 0 0 15px 0;
+  }
+
+  .features__header--town {
+    padding: 0 55px;
+    margin: 0 0 15px 0;
+  }
+
+  .features__number--town {
+    margin: 0 0 20px 0;
+  }
+
+  .features__text {
+    font-size: 12px;
+  }
+
+  .features__header--devil {
+    max-width: 190px;
+  }
+
+  .features__text--devil {
+    max-width: 230px;
+  }
+
+  .features__subitem {
+    row-gap: unset;
+  }
+
+  .features__subitem-text {
+    margin: 0 auto 25px auto;
+  }
+
+  .features__promo-photo {
+    margin: 0 0 28px 0;
+  }
+
+  .features__subitem--header {
+    margin: 0 0 25px 0;
+  }
 
   .features__subitem-text--housing {
     max-width: 282px;
   }
 
   .features__subitem-text--food {
-    max-width: 313px;
+    max-width: 300px;
   }
 
   .features__subitem-text--souvenirs {
-    max-width: 244px;
+    max-width: 192px;
   }
 
   .features__text--square {
+    font-size: 14px;
     max-width: 315px;
   }
 
   .features__text--road {
+    font-size: 14px;
     max-width: 275px;
   }
 
   .features__text--tourists {
+    font-size: 14px;
     max-width: 290px;
   }
 }

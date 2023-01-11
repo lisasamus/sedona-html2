@@ -2,7 +2,11 @@
   background-color: $white;
   text-align: center;
   text-transform: uppercase;
-  padding: 30px 5px 23px 5px;
+  padding: 37px 5px 23px 5px;
+}
+
+.footer--catalog {
+  padding: 28px 5px 23px 5px;
 }
 
 .footer__hashtag {
@@ -31,9 +35,12 @@
 }
 
 .footer__social-link {
-  display: block;
+  display: flex;
+  height: 48px;
+  width: 48px;
+  align-items: center;
+  justify-content: center;
   background-color: $main-color;
-  padding: 12px 13px 9px 13px;
 
   &:hover,
   &:focus {
@@ -49,11 +56,6 @@
   }
 }
 
-.footer__social-icon {
-  width: 24px;
-  height: 24px;
-}
-
 .footer__authors-link {
   display: flex;
   justify-content: center;
@@ -63,23 +65,11 @@
 
   &:hover,
   &:focus {
-    svg path {
-      fill: $main-color;
-    }
-
-    .footer__authors-text {
-      color: $main-color;
-    }
+    color: $main-color;
   }
 
   &:active {
-    svg path {
-      fill: rgba(0, 0, 0, 0.3);
-    }
-
-    .footer__authors-text {
-      color: rgba(0, 0, 0, 0.3);
-    }
+    color: $placeholder-font;
   }
 }
 
@@ -98,7 +88,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
 
   .footer__hashtag {

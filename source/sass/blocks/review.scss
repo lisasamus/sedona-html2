@@ -1,5 +1,5 @@
 .review {
-  margin: 0 auto;
+  margin: 0 auto 17px auto;
   background-color: $white;
 }
 
@@ -35,9 +35,8 @@
 
 .review__button-wrap {
   padding: 0 20px;
-  margin: 0 0 24px 0;
+  margin: 0;
 }
-
 
 @media (min-width: $tablet-width) {
   .review__heading {
@@ -62,7 +61,8 @@
 
   .review__button {
     max-width: 324px;
-    padding: 18px 60px 13px 50px;
+    padding: 20px 60px 13px 50px;
+    font-size: 18px;
   }
 
   .review__heading--line-radio,
@@ -108,6 +108,19 @@
   .review__heading--line-feedback::before {
     top: 14px;
   }
+
+  .review__heading--userdata {
+    margin: 0 0 28px 37px;
+  }
+
+  .review__heading--contacts {
+    margin: 0 0 28px -41px;
+  }
+
+  .review__mark {
+    align-self: flex-end;
+    margin: 0 0 13px 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -131,13 +144,25 @@
     margin: 0 0 64px 0;
   }
 
+  .review__heading--contacts {
+    margin: 0 0 28px -67px;
+  }
+
+  .review__heading--userdata {
+    margin: 0 0 28px 62px;
+  }
+
   .review__heading--line::before,
   .review__heading--line::after {
     width: 280px;
   }
 
-  .review__heading--line-radio,
+  .review__heading--line-radio {
+    margin: 0 0 45px 0px;
+  }
+
   .review__heading--line-checkbox {
     margin: 0 0 28px 0px;
+
   }
 }

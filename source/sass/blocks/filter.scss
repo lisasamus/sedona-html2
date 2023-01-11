@@ -5,7 +5,7 @@
 
 .filter__list {
   list-style: none;
-  margin: 0 0 34px 0;
+  margin: 0 0 24px 0;
   padding: 0 20px;
   font-weight: 700;
   font-size: 18px;
@@ -13,7 +13,20 @@
 }
 
 .filter__item {
-  margin: 0 0 26px 0;
+  margin: 0 0 16px 0;
+
+  &:hover .filter__input+label::before,
+  &:focus .filter__input+label::before {
+    background-color: $disabled;
+  }
+
+  &:active .filter__input+label::before {
+    background-color: $filter-active;
+  }
+
+  &:active .filter__input:checked+label::after {
+    background-color: $disabled;
+  }
 }
 
 .filter__item:last-child {
@@ -96,7 +109,8 @@
     max-width: 576px;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    row-gap: 16px;
+    column-gap: 50px;
     margin: 0 auto 48px auto;
     padding: 0;
   }
@@ -117,8 +131,8 @@
   .filter__list--radio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 28px;
-    margin: 28px 53px 56px 53px;
+    gap: 57px;
+    margin: 0 53px 75px 53px;
   }
 
   .filter__list--checkbox {
